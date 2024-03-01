@@ -1,0 +1,26 @@
+{
+  "name": "renovate-latest-rh-tag",
+  "version": "1.0.0",
+  "description": "minimal reproduction of renovatebot/renovte tag comparision issue",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "run-s clean compile",
+    "compile": "tsc -p tsconfig.app.json",
+    "clean": "rimraf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sindresorhus/is": "4.6.0",
+    "semver": "7.5.4",
+    "tslib": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/semver": "^7.5.8",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "typescript": "5.3.3"
+  }
+}

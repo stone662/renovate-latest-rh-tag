@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig",
+    "compilerOptions": {
+      "declaration": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "inlineSources": true,
+      "importHelpers": true,
+      "types": ["node"]
+    },
+    "files": ["index.ts"],
+    "include": ["./**/*.d.ts"]
+  }
